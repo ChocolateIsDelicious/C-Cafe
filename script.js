@@ -116,3 +116,9 @@ window.addEventListener('click', (event) => {
     closeModal();
   }
 });
+const hamburger = document.getElementById('hamburger');
+const navRight = document.querySelector('.nav-right');
+
+hamburger.addEventListener('click', () => {
+  navRight.classList.toggle('show');
+});
