@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C+ Café n' More</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+  
+<body>
+
+  <div class="banner" id="home">
+    <div class="navbar">
+  <img src="logo.png" alt="C+ Café Logo" class="logo" />
+  <div class="nav-right">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#customer-service">Customer Service</a></li>
+      <li><a href="#settings">Settings</a></li>
+    </ul>
+    <div class="language-selector">
+      <label for="lang">Language:</label>
+      <select id="lang">
+        <option value="en">English</option>
+        <option value="vi">Tiếng Việt</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+
+    <div class="content">
+  <h1 id="welcome-title">Welcome to C+ Café</h1>
+  <p id="welcome-subtitle">Savor every sip. Delight in every bite.</p>
+  <a href="#menu" class="button" id="view-menu-btn">View Our Menu</a>
+</div>
+  </div>
+
+  <!-- Other sections -->
+  <section id="customer-service" class="section">
+    <h2>Customer Service</h2>
+    <p>Need help? Reach out to our 24/7 team!</p>
+  </section>
+
+  <section id="menu" class="section">
+    <h2>Our Menu</h2>
+    <p>Coming soon: Latte, Espresso, Mochi Ice Cream, and more!</p>
+  </section>
+
+  <section id="introduction" class="section">
+    <h2>About C+ Café</h2>
+    <p>More than coffee — it’s an experience crafted for you.</p>
+  </section>
+
+  <!-- Settings Modal -->
+<div id="settings-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-settings" style="cursor:pointer;">&times;</span>
+    <h2>Settings</h2>
+
+    <!-- Dark Mode Toggle -->
+    <label class="theme-toggle">
+      <input type="checkbox" id="darkModeCheckbox">
+      Enable Dark Mode
+    </label>
+
+    <p style="margin-top: 1rem; color: gray;">More coming soon.</p>
+  </div>
+</div>
+
+  <footer class="footer">
+  <div class="footer-content">
+    <p>Contact Support: <a href="tel:+123456789">+1 (234) 567-89</a></p>
+    <p>&copy; 2025 C+ Café. All rights reserved.</p>
+  </div>
+</footer>
+  
+  
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
