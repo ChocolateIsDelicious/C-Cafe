@@ -76,9 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("#introduction p").textContent = t.introText;
   }
 
-  // Auto-detect or remember language (future)
-  // const savedLang = localStorage.getItem("lang");
-  // if (savedLang) applyLanguage(savedLang);
+  
 });
 
 const modal = document.getElementById('settings-modal');
