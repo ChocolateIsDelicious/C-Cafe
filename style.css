@@ -36,7 +36,7 @@ body {
   align-items: center;
   transition: background 0.3s ease;
   box-sizing: border-box;
-  background-color: var()
+  
 }
 .nav-right {
   display: flex;
@@ -279,30 +279,37 @@ body.dark-mode .footer a:hover {
 
 /* Mobile adaptation */
 .hamburger {
-  display: none;
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: inherit;
-  cursor: pointer;
-  z-index: 11;
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    position: absolute;
+  position: absolute;
     top: 15px;
     right: 20px;
-  }
+  display: block;
+  font-size: 24px;
+  background: none;
+  cursor: pointer;        
+  color: #fff8f1;            
+  background: transparent; 
+  border: none;                    
+  padding: 0.5rem 1rem;    
+  z-index: 9999;           
+}
+
+
+
+@media (max-width: 768px) {
+  .nav-right ul li {
+  margin: 12px 0; 
+  text-align: center;
+}
+  
+  
 
   .nav-right {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: var(--navbar-bg, #222);
+    background-color: rgba(0,0,0,0.7);
     position: absolute;
-    top: 60px; /* adjust depending on navbar height */
+    top: 20px; 
     left: 0;
     padding: 10px 0;
     z-index: 10;
